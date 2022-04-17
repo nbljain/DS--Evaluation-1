@@ -33,8 +33,10 @@ else:
 
 st.write(input_df)
 
-st.subheader('Prediction')
+
 
 cleaned_data= pd.read_csv('Cleaned_reviews.csv')
-
-st.write(cleaned_data)
+predict = st.selectbox("predict",["Incorrect Review","None"])
+    if predict == "Incorrect Review":
+    st.subheader('Prediction')  
+    st.write(cleaned_data)
