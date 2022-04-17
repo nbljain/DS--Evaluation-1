@@ -29,11 +29,7 @@ else:
         return features
     input_df = user_input_features()
     
-    
-data_raw = pd.read_csv('Cleaned_reviews.csv')
-penguins = data_raw.drop(columns=['ID'])
-df = pd.concat([input_df,penguins],axis=0)
-st.write(df)
+  
 
 #st.write(input_df)
 st.subheader('Prediction')
