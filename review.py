@@ -28,7 +28,14 @@ else:
         features = pd.DataFrame(data, index=[0])
         return features
     input_df = user_input_features()
-st.write(input_df)
+    
+    
+data_raw = pd.read_csv('penguins_cleaned.csv')
+penguins = data_raw.drop(columns=['ID'])
+df = pd.concat([input_df,penguins],axis=0)
+st.write(df
+
+#st.write(input_df)
 st.subheader('Prediction')
-cleaned_data= pd.read_csv('Cleaned_reviews.csv')
-st.write(cleaned_data)
+#cleaned_data= pd.read_csv('Cleaned_reviews.csv')
+#st.write(cleaned_data)
