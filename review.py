@@ -33,9 +33,9 @@ else:
 data_raw = pd.read_csv('penguins_cleaned.csv')
 penguins = data_raw.drop(columns=['ID'])
 df = pd.concat([input_df,penguins],axis=0)
-st.write(df
+st.write(df)
 
 #st.write(input_df)
-st.subheader('Prediction')
+#st.subheader('Prediction')
 #cleaned_data= pd.read_csv('Cleaned_reviews.csv')
 #st.write(cleaned_data)
