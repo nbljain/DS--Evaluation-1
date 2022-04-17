@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-sid = SentimentIntensityAnalyzer()
 
 st.write("""
 # Inaccrate Rating Prediction App
