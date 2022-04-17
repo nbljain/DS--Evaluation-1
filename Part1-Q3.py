@@ -32,6 +32,9 @@ else:
   
 
 st.write(input_df)
+
 st.subheader('Prediction')
+
 cleaned_data= pd.read_csv('Cleaned_reviews.csv')
+
 st.write(cleaned_data)
