@@ -4,7 +4,7 @@ import numpy as np
 
 
 st.write("""
-# Inaccrate Rating Prediction App
+# InaccUrate Rating Prediction App
 This app predicts the **Inaccurate** Ratings!
 """)
 
