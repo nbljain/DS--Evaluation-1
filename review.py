@@ -30,5 +30,5 @@ else:
     input_df = user_input_features()
 st.write(input_df)
 st.subheader('Prediction')
-cleaned_data= pd.read_csv('cleaned_reviews.csv')
+cleaned_data= pd.read_csv('Cleaned_reviews.csv')
 st.write(cleaned_data)
